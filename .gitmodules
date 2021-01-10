@@ -1,0 +1,12 @@
+[submodule "external/aap-juce"]
+	path = aap-juce
+	url = https://github.com/atsushieno/aap-juce.git
+[submodule "external/android-audio-plugin-framework"]
+	path = external/android-audio-plugin-framework
+	url = https://github.com/atsushieno/android-audio-plugin-framework.git
+[submodule "external/JUCE"]
+	path = external/JUCE
+	url = https://github.com/juce-framework/JUCE.git
+[submodule "external/OB-Xd"]
+	path = external/OB-Xd
+	url = https://github.com/reales/OB-Xd.git

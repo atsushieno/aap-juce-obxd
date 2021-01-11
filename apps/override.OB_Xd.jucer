@@ -69,56 +69,56 @@
     <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="nnY63W" smallIcon="nnY63W" extraLinkerFlags="-landroidaudioplugin">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Obxd" stripLocalSymbols="0"
-            headerPath="../../../../external/android-audio-plugin-framework/native/plugin-api/include;../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include"
-            libraryPath="../../../../external/android-audio-plugin-framework/build/native/androidaudioplugin"
+            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            libraryPath="../../android-audio-plugin-framework/build/native/androidaudioplugin"
                        osxCompatibility="10.6 SDK" linkTimeOptimisation="0"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Obxd"
-            headerPath="../../../../external/android-audio-plugin-framework/native/plugin-api/include;../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include"
-            libraryPath="../../../../external/android-audio-plugin-framework/build/native/androidaudioplugin"
+            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            libraryPath="../../android-audio-plugin-framework/build/native/androidaudioplugin"
                        stripLocalSymbols="1" osxCompatibility="10.6 SDK" linkTimeOptimisation="0"
                        osxArchitecture="64BitIntel"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="../../aap-juce/modules" />
+        <MODULEPATH id="juce_opengl" path="./juce-modules"/>
+        <MODULEPATH id="juce_gui_extra" path="./juce-modules"/>
+        <MODULEPATH id="juce_gui_basics" path="./juce-modules"/>
+        <MODULEPATH id="juce_graphics" path="./juce-modules"/>
+        <MODULEPATH id="juce_events" path="./juce-modules"/>
+        <MODULEPATH id="juce_data_structures" path="./juce-modules"/>
+        <MODULEPATH id="juce_core" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_utils" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_processors" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_formats" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_devices" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_basics" path="./juce-modules"/>
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
       </MODULEPATHS>
     </XCODE_MAC>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" targetName="OB_Xd"
-            headerPath="../../../../external/android-audio-plugin-framework/native/plugin-api/include;../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../external/android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include"
-            libraryPath="/usr/X11R6/lib/;../../../../external/android-audio-plugin-framework/build/native/androidaudioplugin;${CMAKE_CURRENT_SOURCE_DIR}/../../../../external/android-audio-plugin-framework/build/native/androidaudioplugin"/>
+            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            libraryPath="/usr/X11R6/lib/;../../android-audio-plugin-framework/build/native/androidaudioplugin;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/build/native/androidaudioplugin"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="OB_Xd"
-            headerPath="../../../../external/android-audio-plugin-framework/native/plugin-api/include;../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../external/android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include"
-            libraryPath="/usr/X11R6/lib/;../../../../external/android-audio-plugin-framework/build/native/androidaudioplugin;${CMAKE_CURRENT_SOURCE_DIR}/../../../../external/android-audio-plugin-framework/build/native/androidaudioplugin"/>
+            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            libraryPath="/usr/X11R6/lib/;../../android-audio-plugin-framework/build/native/androidaudioplugin;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/build/native/androidaudioplugin"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="../../aap-juce/modules" />
+        <MODULEPATH id="juce_opengl" path="./juce-modules"/>
+        <MODULEPATH id="juce_gui_extra" path="./juce-modules"/>
+        <MODULEPATH id="juce_gui_basics" path="./juce-modules"/>
+        <MODULEPATH id="juce_graphics" path="./juce-modules"/>
+        <MODULEPATH id="juce_events" path="./juce-modules"/>
+        <MODULEPATH id="juce_data_structures" path="./juce-modules"/>
+        <MODULEPATH id="juce_core" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_utils" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_processors" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_formats" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_devices" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_basics" path="./juce-modules"/>
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
     <ANDROIDSTUDIO targetFolder="Builds/Android" 
@@ -128,30 +128,30 @@
                    gradleVersion="6.7" gradleWrapperVersion="7.0.0-alpha03">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 
-                       headerPath="${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/dependencies/tinyxml2"
-                       libraryPath="${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/java/androidaudioplugin/build/intermediates/cmake/debug/obj/${ANDROID_ABI}"
+                       headerPath="../../android-audio-plugin-framework/native/androidaudioplugin/core/include;../../android-audio-plugin-framework/native/plugin-api/include"
+                       libraryPath="../../android-audio-plugin-framework/java/androidaudioplugin/build/intermediates/cmake/debug/obj/${ANDROID_ABI}"
                        optimisation="1" linkTimeOptimisation="0"
                        recommendedWarnings="LLVM"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" linkTimeOptimisation="1"
-                       headerPath="${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/dependencies/tinyxml2"
-                       libraryPath="${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../external/android-audio-plugin-framework/java/androidaudioplugin/build/intermediates/cmake/release/obj/${ANDROID_ABI}"
+                       headerPath="../../android-audio-plugin-framework/native/androidaudioplugin/core/include;../../android-audio-plugin-framework/native/plugin-api/include"
+                       libraryPath="../../android-audio-plugin-framework/java/androidaudioplugin/build/intermediates/cmake/release/obj/${ANDROID_ABI}"
                        recommendedWarnings="LLVM"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="../../external/JUCE/modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="../../aap-juce/modules" />
+        <MODULEPATH id="juce_opengl" path="./juce-modules"/>
+        <MODULEPATH id="juce_gui_extra" path="./juce-modules"/>
+        <MODULEPATH id="juce_gui_basics" path="./juce-modules"/>
+        <MODULEPATH id="juce_graphics" path="./juce-modules"/>
+        <MODULEPATH id="juce_events" path="./juce-modules"/>
+        <MODULEPATH id="juce_data_structures" path="./juce-modules"/>
+        <MODULEPATH id="juce_core" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_utils" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_processors" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_formats" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_devices" path="./juce-modules"/>
+        <MODULEPATH id="juce_audio_basics" path="./juce-modules"/>
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
       </MODULEPATHS>
     </ANDROIDSTUDIO>
   </EXPORTFORMATS>

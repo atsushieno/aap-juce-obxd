@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugins>
+  <plugin name="OB-Xd" category="Synth" author="Datsounds" manufacturer="https://www.discodsp.com/obxd/"
+          unique-id="juceaap:4f627864" library="libjuce_jni.so" entrypoint="GetJuceAAPFactory"
+          assets="">
+    <ports>
+      <port direction="output" content="audio" name="Left"/>
+      <port direction="output" content="audio" name="Right"/>
+      <port direction="input" content="audio" name="Left"/>
+      <port direction="input" content="audio" name="Right"/>
+      <port direction="input" content="midi" name="MIDI input"/>
+    </ports>
+  </plugin>
+</plugins>

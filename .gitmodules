@@ -1,5 +1,5 @@
 [submodule "external/aap-juce"]
-	path = aap-juce
+	path = external/aap-juce
 	url = https://github.com/atsushieno/aap-juce.git
 [submodule "external/android-audio-plugin-framework"]
 	path = external/android-audio-plugin-framework

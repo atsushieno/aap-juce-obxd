@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugins>
+<plugins xmlns="urn:org.androidaudioplugin.core" xmlns:pp="urn:org.androidaudioplugin.port">
   <plugin name="OB-Xd" category="Synth" author="Datsounds" manufacturer="https://www.discodsp.com/obxd/"
           unique-id="juceaap:4f627864" library="libjuce_jni.so" entrypoint="GetJuceAAPFactory"
           assets="">

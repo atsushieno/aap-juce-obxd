@@ -1,24 +1,133 @@
 diff --git a/Source/PluginEditor.cpp b/Source/PluginEditor.cpp
-index 494be13..5821f5e 100755
+index 40bf916..60fb785 100755
 --- a/Source/PluginEditor.cpp
 +++ b/Source/PluginEditor.cpp
-@@ -683,7 +683,7 @@ void ObxdAudioProcessorEditor::mouseUp(const MouseEvent& e)
+@@ -511,16 +511,16 @@ void ObxdAudioProcessorEditor::createMenu ()
  
- 		const Point<int> pos = e.getMouseDownScreenPosition();
- 
--		int result = menu.showAt(Rectangle<int>(pos.getX(), pos.getY(), 1, 1));
-+		std::function<void(int)> callback = [&](int result) {
- 		if (result >= (skinStart + 1) && result <= (skinStart + skins.size()))
- 		{
- 			result -= 1;
-@@ -708,6 +708,10 @@ void ObxdAudioProcessorEditor::mouseUp(const MouseEvent& e)
- 			result -= progStart;
- 			processor.setCurrentProgram(result);
- 		}
-+		};
-+		PopupMenu::Options options{};
-+		options.withTargetScreenArea(Rectangle<int>(pos.getX(), pos.getY(), 1, 1));
-+		menu.showMenuAsync(options, callback);
- 	}
+ void ObxdAudioProcessorEditor::resultFromMenu (const Point<int> pos)
+ {
+-    int result = popupMenus[0]->showAt (Rectangle<int> (pos.getX(), pos.getY(), 1, 1));
+-    
++    std::function<void(int)> callback = [&](int result) {
++
+     if (result >= (skinStart + 1) && result <= (skinStart + skins.size()))
+     {
+         result -= 1;
+         result -= skinStart;
+-        
++
+         const File newSkinFolder = skins.getUnchecked (result);
+         processor.setCurrentSkinFolder (newSkinFolder.getFileName());
+-        
++
+         //rebuildComponents (processor);
+         clean();
+         loadSkin (processor);
+@@ -529,7 +529,7 @@ void ObxdAudioProcessorEditor::resultFromMenu (const Point<int> pos)
+     {
+         result -= 1;
+         result -= bankStart;
+-        
++
+         const File bankFile = banks.getUnchecked (result);
+         processor.loadFromFXBFile (bankFile);
+         clean();
+@@ -546,6 +546,11 @@ void ObxdAudioProcessorEditor::resultFromMenu (const Point<int> pos)
+     else if (result < progStart){
+         MenuActionCallback(result);
+     }
++
++    };
++    PopupMenu::Options options{};
++    options.withTargetScreenArea(Rectangle<int> (pos.getX(), pos.getY(), 1, 1));
++    popupMenus[0]->showMenuAsync(options, callback);
  }
  
+ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+@@ -553,6 +558,8 @@ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+     
+     if (action == MenuAction::ImportBank)
+     {
++        // FIXME: not implemented on Android
++        /*
+         fileChooser = std::make_unique<juce::FileChooser>("Import Bank (*.fxb)", juce::File(), "*.fxb", true);
+         
+         if (fileChooser->browseForFileToOpen()) {
+@@ -566,10 +573,13 @@ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+                 createMenu();
+             }
+         }
++        */
+     };
+     
+     if (action == MenuAction::ExportBank)
+     {
++        // FIXME: not implemented on Android
++        /*
+         auto file = processor.getDocumentFolder().getChildFile("Banks");
+         FileChooser myChooser ("Export Bank (*.fxb)", file, "*.fxb", true);
+         if(myChooser.browseForFileToSave(true))
+@@ -583,13 +593,17 @@ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+             processor.saveBank(File(temp));
+             
+         }
++        */
+     };
+     
+     if (action == MenuAction::DeleteBank)
+     {
++        // FIXME: not implemented on Android
++        /*
+         if(NativeMessageBox::showOkCancelBox(AlertWindow::NoIcon, "Delete Bank", "Delete current bank: " + processor.currentBank + "?")){
+             processor.deleteBank();
+         }
++        */
+     }
+     
+     
+@@ -664,16 +678,21 @@ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+     
+     if (action == MenuAction::DeletePreset)
+     {
++        // FIXME: not implemented on Android
++        /*
+         if(NativeMessageBox::showOkCancelBox(AlertWindow::NoIcon, "Delete Preset", "Delete current preset " + processor.currentPreset + "?")){
+             processor.deletePreset();
+             createMenu();
+         }
++        */
+         return;
+     }
+     
+ 
+     if (action == MenuAction::ImportPreset)
+     {
++        // FIXME: not implemented on Android
++        /*
+         DBG("Import Preset");
+         fileChooser = std::make_unique<juce::FileChooser>("Import Preset (*.fxp)", juce::File(), "*.fxp", true);
+ 
+@@ -687,11 +706,14 @@ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+                 createMenu();
+             //}
+         }
++        */
+     };
+     
+     if (action == MenuAction::ExportPreset)
+     {
+-        
++        // FIXME: not implemented on Android
++        /*
++
+         auto file = processor.getPresetsFolder();
+         FileChooser myChooser ("Export Preset (*.fxp)", file, "*.fxp", true);
+         if(myChooser.browseForFileToSave(true))
+@@ -705,6 +727,7 @@ void ObxdAudioProcessorEditor::MenuActionCallback(int action){
+             processor.savePreset(File(temp));
+             
+         }
++        */
+     };
+ 
+ }

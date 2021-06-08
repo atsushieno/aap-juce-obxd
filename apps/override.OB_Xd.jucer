@@ -123,7 +123,7 @@
     </LINUX_MAKE>
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    androidMinimumSDK="29" androidTargetSDK="30"
-                   androidDependencies="implementation 'org.androidaudioplugin:androidaudioplugin:0.6.12'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.6.12'&#10;implementation &quot;org.jetbrains.kotlin:kotlin-stdlib:1.4.32&quot;&#10;&#10;&#10;"
+                   androidDependencies="implementation 'org.androidaudioplugin:androidaudioplugin:0.6.15'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.6.15'&#10;implementation &quot;org.jetbrains.kotlin:kotlin-stdlib:1.5.10&quot;&#10;&#10;&#10;"
                    >
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 

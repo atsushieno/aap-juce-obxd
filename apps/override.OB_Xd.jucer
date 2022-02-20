@@ -69,11 +69,11 @@
     <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="nnY63W" smallIcon="nnY63W" extraLinkerFlags="-landroidaudioplugin">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Obxd" stripLocalSymbols="0"
-            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            headerPath="../../android-audio-plugin-framework/include"
             libraryPath="../../android-audio-plugin-framework/build/native/androidaudioplugin"
                        osxCompatibility="10.6 SDK" linkTimeOptimisation="0"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Obxd"
-            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            headerPath="../../android-audio-plugin-framework/include"
             libraryPath="../../android-audio-plugin-framework/build/native/androidaudioplugin"
                        stripLocalSymbols="1" osxCompatibility="10.6 SDK" linkTimeOptimisation="0"
                        osxArchitecture="64BitIntel"/>
@@ -98,10 +98,10 @@
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" targetName="OB_Xd"
-            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            headerPath="../../android-audio-plugin-framework/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/include"
             libraryPath="/usr/X11R6/lib/;../../android-audio-plugin-framework/build/native/androidaudioplugin;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/build/native/androidaudioplugin"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="OB_Xd"
-            headerPath="../../android-audio-plugin-framework/native/plugin-api/include;../../android-audio-plugin-framework/native/androidaudioplugin/core/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/plugin-api/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/native/androidaudioplugin/core/include"
+            headerPath="../../android-audio-plugin-framework/include;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/include"
             libraryPath="/usr/X11R6/lib/;../../android-audio-plugin-framework/build/native/androidaudioplugin;${CMAKE_CURRENT_SOURCE_DIR}/../../android-audio-plugin-framework/build/native/androidaudioplugin"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
@@ -123,16 +123,16 @@
     </LINUX_MAKE>
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    androidMinimumSDK="29" androidTargetSDK="31"
-                   androidDependencies="implementation 'org.androidaudioplugin:androidaudioplugin:0.6.22'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.6.22'&#10;"
+                   androidDependencies="implementation 'org.androidaudioplugin:androidaudioplugin:0.7.0'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.7.0'&#10;"
                    >
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 
-                       headerPath="../../android-audio-plugin-framework/native/androidaudioplugin/core/include;../../android-audio-plugin-framework/native/plugin-api/include"
+                       headerPath="../../android-audio-plugin-framework/include"
                        libraryPath="../../android-audio-plugin-framework/java/androidaudioplugin/build/intermediates/cmake/debug/obj/${ANDROID_ABI}"
                        optimisation="1" linkTimeOptimisation="0"
                        recommendedWarnings="LLVM"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" linkTimeOptimisation="0"
-                       headerPath="../../android-audio-plugin-framework/native/androidaudioplugin/core/include;../../android-audio-plugin-framework/native/plugin-api/include"
+                       headerPath="../../android-audio-plugin-framework/include"
                        libraryPath="../../android-audio-plugin-framework/java/androidaudioplugin/build/intermediates/cmake/release/obj/${ANDROID_ABI}"
                        recommendedWarnings="LLVM"/>
       </CONFIGURATIONS>

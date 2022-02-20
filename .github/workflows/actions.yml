@@ -53,10 +53,6 @@ jobs:
                  graphviz cmake ninja-build
     - name: stupid NDK setup workaround for GitHub Actions
       run: sudo mkdir -p /usr/local/lib/android/sdk/ndk && sudo chmod 777 /usr/local/lib/android/sdk/ndk
-    - name: create local.properties
-      run: |
-        echo "cmake.dir=/usr" > local.properties
-        cp local.properties external/android-audio-plugin-framework/java/local.properties
     - name: build
       run: xvfb-run -a --server-args="-screen 0 1280x800x24 -ac -nolisten tcp -dpi 96 +extension RANDR" make MINIMIZE_INTERMEDIATES=1 build dist
     - name: upload-artifact

@@ -26,7 +26,7 @@ jobs:
         cache-name: cache-ndk
       with:
         path: /usr/local/lib/android/sdk/ndk/21.4.7075529
-        key: ${{ runner.os }}-ndk_r21d_linux
+        key: ${{ runner.os }}-ndk_r21e_linux
     - name: cache AVD
       uses: actions/cache@v2
       env:
@@ -80,7 +80,7 @@ jobs:
         cache-name: cache-ndk
       with:
         path: /Users/runner/Library/Android/sdk/ndk/21.4.7075529
-        key: ${{ runner.os }}-ndk_r21d_osx
+        key: ${{ runner.os }}-ndk_r21e_osx
     - name: cache AVD
       uses: actions/cache@v2
       env:

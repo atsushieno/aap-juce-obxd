@@ -5,7 +5,7 @@
           unique-id="juceaap:4f627864" library="libjuce_jni.so" entrypoint="GetJuceAAPFactory"
           assets="">
     <extensions>
-      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1"/>
+      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1" />
     </extensions>
     <ports>
       <port direction="output" content="audio" name="Left"/>

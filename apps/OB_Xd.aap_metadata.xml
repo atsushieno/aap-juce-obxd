@@ -1,18 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugins xmlns="urn:org.androidaudioplugin.core" xmlns:pp="urn:org.androidaudioplugin.port">
+<plugins xmlns="urn:org.androidaudioplugin.core">
   <plugin name="OB-Xd" category="Instrument" author="Datsounds" manufacturer="https://www.discodsp.com/obxd/"
           unique-id="juceaap:4f627864" library="libjuce_jni.so" entrypoint="GetJuceAAPFactory"
           assets="">
     <extensions>
-      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1" />
+      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1"/>
     </extensions>
+    <parameters xmlns="urn://androidaudioplugin.org/extensions/parameters">
+      <parameter id="0" name="" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="1" name="MidiLearn" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="2" name="Volume" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="3" name="VoiceCount" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="4" name="Tune" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="5" name="Octave" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="6" name="BendRange" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="7" name="BendOsc2Only" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="8" name="LegatoMode" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="9" name="VibratoRate" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="10" name="VFltFactor" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="11" name="VAmpFactor" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="12" name="AsPlayedAllocation" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="13" name="Portamento" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="14" name="Unison" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="15" name="VoiceDetune" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="16" name="Oscillator2detune" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="17" name="LfoFrequency" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="18" name="LfoSineWave" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="19" name="LfoSquareWave" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="20" name="LfoSampleHoldWave" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="21" name="LfoAmount1" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="22" name="LfoAmount2" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="23" name="LfoOsc1" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="24" name="LfoOsc2" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="25" name="LfoFilter" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="26" name="LfoPw1" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="27" name="LfoPw2" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="28" name="Osc2HardSync" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="29" name="Xmod" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="30" name="Osc1Pitch" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="31" name="Osc2Pitch" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="32" name="PitchQuant" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="33" name="Osc1Saw" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="34" name="Osc1Pulse" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="35" name="Osc2Saw" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="36" name="Osc2Pulse" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="37" name="PulseWidth" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="38" name="Brightness" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="39" name="EnvelopeToPitch" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="40" name="Osc1Mix" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="41" name="Osc2Mix" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="42" name="NoiseMix" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="43" name="FilterKeyFollow" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="44" name="Cutoff" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="45" name="Resonance" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="46" name="Multimode" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="47" name="Filter_Warm" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="48" name="BandpassBlend" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="49" name="FourPole" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="50" name="FilterEnvAmount" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="51" name="Attack" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="52" name="Decay" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="53" name="Sustain" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="54" name="Release" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="55" name="FilterAttack" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="56" name="FilterDecay" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="57" name="FilterSustain" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="58" name="FilterRelease" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="59" name="EnvelopeDetune" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="60" name="FilterDetune" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="61" name="PortamentoDetune" direction="input" minimum="0.0"
+                 maximum="1.0" default="0.0"/>
+      <parameter id="62" name="Pan1" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="63" name="Pan2" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="64" name="Pan3" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="65" name="Pan4" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="66" name="Pan5" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="67" name="Pan6" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="68" name="Pan7" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="69" name="Pan8" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="70" name="MidiUnlearn" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="71" name="EconomyMode" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="72" name="LfoSync" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="73" name="PwEnv" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="74" name="PwEnvBoth" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="75" name="EnvPitchBoth" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="76" name="FenvInvert" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="77" name="PwOfs" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="78" name="LevelDif" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+      <parameter id="79" name="SelfOscPush" direction="input" minimum="0.0" maximum="1.0"
+                 default="0.0"/>
+    </parameters>
     <ports>
       <port direction="output" content="audio" name="Left"/>
       <port direction="output" content="audio" name="Right"/>
       <port direction="input" content="audio" name="Left"/>
       <port direction="input" content="audio" name="Right"/>
-      <port direction="input" content="midi" name="MIDI input"/>
+      <port direction="input" content="midi2" name="MIDI input"/>
     </ports>
   </plugin>
 </plugins>

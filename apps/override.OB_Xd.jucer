@@ -120,8 +120,8 @@
       </MODULEPATHS>
     </LINUX_MAKE>
     <ANDROIDSTUDIO targetFolder="Builds/Android"
-                   androidMinimumSDK="30" androidTargetSDK="31"
-                   androidDependencies="runtimeOnly 'dev.atsushieno:libcxx-provider:24.0.8215888'&#10;implementation 'org.androidaudioplugin:androidaudioplugin:0.7.3'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.7.3'&#10;"
+                   androidMinimumSDK="29" androidTargetSDK="33"
+                   androidDependencies="runtimeOnly 'dev.atsushieno:libcxx-provider:24.0.8215888'&#10;implementation 'org.androidaudioplugin:androidaudioplugin:0.7.4'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.7.4'&#10;"
                    >
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 

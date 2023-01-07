@@ -68,10 +68,10 @@
     <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="nnY63W" smallIcon="nnY63W" extraLinkerFlags="-landroidaudioplugin" extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Obxd" stripLocalSymbols="0"
-            headerPath="../../../../external/android-audio-plugin-framework/include"
+            headerPath="../../../../external/aap-core/include"
                        osxCompatibility="10.6 SDK" linkTimeOptimisation="0"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Obxd"
-            headerPath="../../../../external/android-audio-plugin-framework/include"
+            headerPath="../../../../external/aap-core/include"
                        stripLocalSymbols="1" osxCompatibility="10.6 SDK" linkTimeOptimisation="0"
                        osxArchitecture="64BitIntel"/>
       </CONFIGURATIONS>
@@ -95,7 +95,7 @@
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie" extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1">
       <CONFIGURATIONS>
         <CONFIGURATION name="Release64" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
-                       headerPath="../../../../external/android-audio-plugin-framework/include"
+                       headerPath="../../../../external/aap-core/include"
                        targetName="OB_Xd" linuxArchitecture="-m64"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
@@ -187,15 +187,15 @@
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1"
                    androidMinimumSDK="29" androidTargetSDK="33"
-                   androidDependencies="runtimeOnly 'dev.atsushieno:libcxx-provider:24.0.8215888'&#10;implementation 'org.androidaudioplugin:androidaudioplugin:0.7.4'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.7.4'&#10;"
+                   androidDependencies="runtimeOnly 'dev.atsushieno:libcxx-provider:24.0.8215888'&#10;implementation 'org.androidaudioplugin:androidaudioplugin:0.7.5-pre'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.7.5-pre'&#10;"
                    >
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 
-                       headerPath="../../../../external/android-audio-plugin-framework/include"
+                       headerPath="../../../../external/aap-core/include"
                        optimisation="1" linkTimeOptimisation="0"
                        recommendedWarnings="LLVM"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" linkTimeOptimisation="0"
-                       headerPath="../../../../external/android-audio-plugin-framework/include"
+                       headerPath="../../../../external/aap-core/include"
                        recommendedWarnings="LLVM"/>
       </CONFIGURATIONS>
       <MODULEPATHS>

@@ -5,7 +5,7 @@ AAP_JUCE_DIR=$(shell pwd)/external/aap-juce
 APP_SRC_DIR=$(shell pwd)/external/OB-Xd
 
 # base app name
-APP_NAME=OB_Xd
+APP_NAME=OB-Xd
 
 # app build directory name. Usually repo name is good.
 APP_BUILD_DIR=apps/OB_Xd

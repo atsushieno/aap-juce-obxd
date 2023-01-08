@@ -1,31 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="mxW328" name="Obxd" projectType="audioplug" version="1.5.0"
-              bundleIdentifier="com.Datsounds.Obxd" includeBinaryInAppConfig="1"
-              buildVST="0" buildVST3="1" buildAU="1" buildRTAS="0" buildAAX="0"
+<JUCERPROJECT id="mxW328" name="OB-Xd" projectType="audioplug" version="2.11.0"
+              bundleIdentifier="com.discoDSP.Obxd" includeBinaryInAppConfig="1"
               pluginName="OB-Xd" pluginDesc="Emulation of famous OB-X, OB-Xa and OB-8 synths"
-              pluginManufacturer="Datsounds" pluginManufacturerCode="Dats"
-              pluginCode="Obxd" pluginChannelConfigs="{0, 2}" pluginIsSynth="1"
-              pluginWantsMidiIn="1" pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0"
-              pluginEditorRequiresKeys="0" pluginAUExportPrefix="" pluginRTASCategory="2048"
-              aaxIdentifier="" pluginAAXCategory="" jucerVersion="5.4.4" companyName="2Dat"
-              companyWebsite="https://www.discodsp.com/obxd/" companyEmail=""
-              buildAUv3="0" pluginIsMidiEffectPlugin="0" pluginFormats="buildAU,buildStandalone"
-              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
-              buildStandalone="1" enableIAA="0">
-  <MAINGROUP id="NZ3n4V" name="Obxd">
+              pluginManufacturer="discoDSP" pluginManufacturerCode="DDSP" pluginCode="Obxd"
+              pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="" pluginRTASCategory="2048" aaxIdentifier="com.discodsp.obxd"
+              companyName="discoDSP" companyWebsite="https://www.discodsp.com/"
+              pluginIsMidiEffectPlugin="0" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginFormats="buildAU,buildStandalone,buildVST,buildVST3" buildVST="1"
+              buildVST3="1" buildAU="1" buildAUv3="0" buildRTAS="0" buildAAX="0"
+              buildStandalone="1" enableIAA="0" jucerFormatVersion="1" companyCopyright="discoDSP"
+              companyEmail="contactus@discodsp.com" pluginAAXCategory="2048"
+              pluginVSTCategory="kPlugCategSynth" displaySplashScreen="1" pluginChannelConfigs="{0,2}"
+              pluginAUMainType="'aumu'" pluginVST3Category="Synth">
+  <MAINGROUP id="NZ3n4V" name="OB-Xd">
     <GROUP id="{90740217-84AB-FD0D-FBC4-CA9EA2C68D5E}" name="Source">
+      <GROUP id="{E11C29DD-69D5-DA26-5CFF-B65751876DEE}" name="MTS">
+        <FILE id="IUi0NP" name="libMTSClient.cpp" compile="1" resource="0"
+              file="Source/MTS/libMTSClient.cpp"/>
+        <FILE id="D5281m" name="libMTSClient.h" compile="0" resource="0" file="Source/MTS/libMTSClient.h"/>
+      </GROUP>
+      <GROUP id="{BD020CFA-798B-F1A1-A6C7-7559BD467248}" name="Components">
+        <FILE id="ZHNz4D" name="ScaleComponent.cpp" compile="1" resource="0"
+              file="Source/Components/ScaleComponent.cpp"/>
+        <FILE id="j4plOT" name="ScaleComponent.h" compile="0" resource="0"
+              file="Source/Components/ScaleComponent.h"/>
+        <FILE id="XnxhrR" name="PresetBar.h" compile="0" resource="0" file="Source/Components/PresetBar.h"/>
+        <FILE id="GHGyel" name="PresetBar.cpp" compile="1" resource="0" file="Source/Components/PresetBar.cpp"/>
+        <FILE id="qhLBZY" name="SetPresetNameWindow.cpp" compile="1" resource="0"
+              file="Source/Components/SetPresetNameWindow.cpp"/>
+        <FILE id="ysasLl" name="SetPresetNameWindow.h" compile="0" resource="0"
+              file="Source/Components/SetPresetNameWindow.h"/>
+      </GROUP>
       <GROUP id="{5F0B15D1-4D92-B2FF-5904-9CF4C3CE645F}" name="Images">
         <FILE id="nnY63W" name="appicon.png" compile="0" resource="1" file="Source/Images/appicon.png"/>
-        <FILE id="IV8Ubu" name="button.png" compile="0" resource="1" file="Source/Images/button.png"/>
-        <FILE id="gUrdhJ" name="knoblsd.png" compile="0" resource="1" file="Source/Images/knoblsd.png"/>
-        <FILE id="FzhdQQ" name="knobssd.png" compile="0" resource="1" file="Source/Images/knobssd.png"/>
-        <FILE id="syMyon" name="legato.png" compile="0" resource="1" file="Source/Images/legato.png"/>
         <FILE id="kwaOoZ" name="main.png" compile="0" resource="1" file="Source/Images/main.png"/>
-        <FILE id="UHyt7V" name="voices.png" compile="0" resource="1" file="Source/Images/voices.png"/>
+        <FILE id="S4I5XU" name="main@2x.png" compile="0" resource="1" file="Source/Images/main@2x.png"/>
+        <FILE id="A8hDlt" name="main@4x.png" compile="0" resource="1" file="Source/Images/main@4x.png"/>
+        <FILE id="l84SVW" name="menu.png" compile="0" resource="1" file="Source/Images/menu.png"/>
+        <FILE id="a3krBW" name="menu@2x.png" compile="0" resource="1" file="Source/Images/menu@2x.png"/>
+        <FILE id="bxKZxm" name="menu@4x.png" compile="0" resource="1" file="Source/Images/menu@4x.png"/>
+        <FILE id="NKGY6X" name="presetnavigation.svg" compile="0" resource="1"
+              file="Source/Images/presetnavigation.svg"/>
       </GROUP>
       <GROUP id="{6995BDF2-263F-3CA7-8CA4-4E21F325477A}" name="Gui">
         <FILE id="zJoidp" name="ButtonList.h" compile="0" resource="0" file="Source/Gui/ButtonList.h"/>
+        <FILE id="I5Qd7K" name="ImageButton.h" compile="0" resource="0" file="Source/Gui/ImageButton.h"/>
         <FILE id="lB2ss0" name="Knob.h" compile="0" resource="0" file="Source/Gui/Knob.h"/>
         <FILE id="YKpBza" name="TooglableButton.h" compile="0" resource="0"
               file="Source/Gui/TooglableButton.h"/>
@@ -53,6 +75,7 @@
         <FILE id="cJCh5P" name="SawOsc.h" compile="0" resource="0" file="Source/Engine/SawOsc.h"/>
         <FILE id="gXSGsx" name="SynthEngine.h" compile="0" resource="0" file="Source/Engine/SynthEngine.h"/>
         <FILE id="dJvsex" name="TriangleOsc.h" compile="0" resource="0" file="Source/Engine/TriangleOsc.h"/>
+        <FILE id="fH5re8" name="Tuning.h" compile="0" resource="0" file="Source/Engine/Tuning.h"/>
         <FILE id="eM2bUm" name="VoiceQueue.h" compile="0" resource="0" file="Source/Engine/VoiceQueue.h"/>
       </GROUP>
       <FILE id="QQwhFQ" name="PluginProcessor.cpp" compile="1" resource="0"
@@ -62,128 +85,89 @@
       <FILE id="VISBqh" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
       <FILE id="LkXqq2" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="nvjdHY" name="Utils.cpp" compile="1" resource="0" file="Source/Utils.cpp"/>
+      <FILE id="ASjsrT" name="Utils.h" compile="0" resource="0" file="Source/Utils.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="nnY63W" smallIcon="nnY63W" extraLinkerFlags="-landroidaudioplugin" extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1">
+    <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="nnY63W" smallIcon="nnY63W"
+               vstLegacyFolder="Modules/vstsdk2.4" vst3Folder="Modules/vstsdk3"
+               aaxFolder="Modules/aax" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1&#10;JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO"
+               iosDevelopmentTeamID="96UBP6BN94">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Obxd" stripLocalSymbols="0"
-            headerPath="../../../../external/aap-core/include"
-                       osxCompatibility="10.6 SDK" linkTimeOptimisation="0"/>
-        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Obxd"
-            headerPath="../../../../external/aap-core/include"
-                       stripLocalSymbols="1" osxCompatibility="10.6 SDK" linkTimeOptimisation="0"
-                       osxArchitecture="64BitIntel"/>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="OB-Xd"
+                       stripLocalSymbols="0" linkTimeOptimisation="0"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="OB-Xd"
+                       stripLocalSymbols="1" linkTimeOptimisation="1" osxCompatibility="10.9 SDK"
+                       enablePluginBinaryCopyStep="0" macOSDeploymentTarget="10.9"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics"/>
-        <MODULEPATH id="juce_audio_utils" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="Modules"/>
+        <MODULEPATH id="juce_gui_extra" path="Modules"/>
+        <MODULEPATH id="juce_gui_basics" path="Modules"/>
+        <MODULEPATH id="juce_graphics" path="Modules"/>
+        <MODULEPATH id="juce_events" path="Modules"/>
+        <MODULEPATH id="juce_data_structures" path="Modules"/>
+        <MODULEPATH id="juce_core" path="Modules"/>
+        <MODULEPATH id="juce_audio_processors" path="Modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="Modules"/>
+        <MODULEPATH id="juce_audio_formats" path="Modules"/>
+        <MODULEPATH id="juce_audio_devices" path="Modules"/>
+        <MODULEPATH id="juce_audio_basics" path="Modules"/>
+        <MODULEPATH id="juce_audio_utils" path="Modules"/>
         <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
       </MODULEPATHS>
     </XCODE_MAC>
-    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie" extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1">
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie -lcurl"
+                vstLegacyFolder="Modules/vstsdk2.4" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1&#10;JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO">
       <CONFIGURATIONS>
         <CONFIGURATION name="Release64" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
-                       headerPath="../../../../external/aap-core/include"
-                       targetName="OB_Xd" linuxArchitecture="-m64"/>
+                       targetName="OB-Xd" linuxArchitecture="-m64" headerPath="../../JuceLibraryCode&#10;../../Source&#10;../Modules/vstsdk2.4&#10;/usr/include/freetype2&#10;/usr/include"
+                       linkTimeOptimisation="1" enablePluginBinaryCopyStep="0"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="~/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_opengl" path="Modules"/>
+        <MODULEPATH id="juce_gui_extra" path="Modules"/>
+        <MODULEPATH id="juce_gui_basics" path="Modules"/>
+        <MODULEPATH id="juce_graphics" path="Modules"/>
+        <MODULEPATH id="juce_events" path="Modules"/>
+        <MODULEPATH id="juce_data_structures" path="Modules"/>
+        <MODULEPATH id="juce_core" path="Modules"/>
+        <MODULEPATH id="juce_audio_utils" path="Modules"/>
+        <MODULEPATH id="juce_audio_processors" path="Modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="Modules"/>
+        <MODULEPATH id="juce_audio_formats" path="Modules"/>
+        <MODULEPATH id="juce_audio_devices" path="Modules"/>
+        <MODULEPATH id="juce_audio_basics" path="Modules"/>
         <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
-    <VS2013 targetFolder="Builds/VisualStudio2013">
+    <VS2019 targetFolder="Builds/VisualStudio2019" smallIcon="nnY63W" bigIcon="nnY63W"
+            vstLegacyFolder="Modules/vstsdk2.4" vst3Folder="Modules/vstsdk3"
+            aaxFolder="Modules/aax" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
-                       isDebug="1" optimisation="3" targetName="Obxd"/>
-        <CONFIGURATION name="Release64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
-                       isDebug="0" optimisation="3" targetName="Obxd64" useRuntimeLibDLL="0"/>
-        <CONFIGURATION name="Release32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="0" optimisation="3" targetName="Obxd" useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="OB-Xd" headerPath="../../Modules/asiosdk2.3.2/common"
+                       useRuntimeLibDLL="0" enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION isDebug="0" name="Release64" useRuntimeLibDLL="0" winArchitecture="x64"
+                       targetName="OB-Xd" headerPath="../../Modules/asiosdk2.3.2/common"
+                       enablePluginBinaryCopyStep="1"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="modules"/>
-        <MODULEPATH id="juce_gui_extra" path="modules"/>
-        <MODULEPATH id="juce_gui_basics" path="modules"/>
-        <MODULEPATH id="juce_graphics" path="modules"/>
-        <MODULEPATH id="juce_events" path="modules"/>
-        <MODULEPATH id="juce_data_structures" path="modules"/>
-        <MODULEPATH id="juce_core" path="modules"/>
-        <MODULEPATH id="juce_audio_utils" path="modules"/>
-        <MODULEPATH id="juce_audio_processors" path="modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="modules"/>
-        <MODULEPATH id="juce_audio_formats" path="modules"/>
-        <MODULEPATH id="juce_audio_devices" path="modules"/>
-        <MODULEPATH id="juce_audio_basics" path="modules"/>
-      </MODULEPATHS>
-    </VS2013>
-    <VS2019 targetFolder="Builds/VisualStudio2019" smallIcon="nnY63W" bigIcon="nnY63W">
-      <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" useRuntimeLibDLL="0"/>
-        <CONFIGURATION isDebug="0" name="Release32" useRuntimeLibDLL="0" winArchitecture="Win32"/>
-        <CONFIGURATION isDebug="0" name="Release64" useRuntimeLibDLL="0" winArchitecture="x64"/>
-      </CONFIGURATIONS>
-      <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_gui_extra" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_gui_basics" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_graphics" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_events" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_data_structures" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_core" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_utils" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_processors" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_formats" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_devices" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_opengl" path="Modules"/>
+        <MODULEPATH id="juce_gui_extra" path="Modules"/>
+        <MODULEPATH id="juce_gui_basics" path="Modules"/>
+        <MODULEPATH id="juce_graphics" path="Modules"/>
+        <MODULEPATH id="juce_events" path="Modules"/>
+        <MODULEPATH id="juce_data_structures" path="Modules"/>
+        <MODULEPATH id="juce_core" path="Modules"/>
+        <MODULEPATH id="juce_audio_utils" path="Modules"/>
+        <MODULEPATH id="juce_audio_processors" path="Modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="Modules"/>
+        <MODULEPATH id="juce_audio_formats" path="Modules"/>
+        <MODULEPATH id="juce_audio_devices" path="Modules"/>
+        <MODULEPATH id="juce_audio_basics" path="Modules"/>
       </MODULEPATHS>
     </VS2019>
-    <VS2017 targetFolder="Builds/VisualStudio2017">
-      <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug"/>
-        <CONFIGURATION isDebug="0" name="Release32" winArchitecture="Win32"/>
-        <CONFIGURATION isDebug="0" name="Release64" winArchitecture="x64"/>
-      </CONFIGURATIONS>
-      <MODULEPATHS>
-        <MODULEPATH id="juce_opengl" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_gui_extra" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_gui_basics" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_graphics" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_events" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_data_structures" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_core" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_utils" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_processors" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_formats" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_devices" path="C:\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_basics"/>
-      </MODULEPATHS>
-    </VS2017>
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1"
                    androidMinimumSDK="29" androidTargetSDK="33"
@@ -217,7 +201,7 @@
     </ANDROIDSTUDIO>
   </EXPORTFORMATS>
   <MODULES>
-    <MODULE id="juceaap_audio_plugin_client" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULES id="juceaap_audio_plugin_client" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
@@ -233,7 +217,8 @@
     <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
   </MODULES>
-  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_WEB_BROWSER="0"/>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_WEB_BROWSER="0" JUCE_ASIO="1"
+               JUCE_JACK="1" JUCE_USE_CURL="0"/>
   <LIVE_SETTINGS>
     <OSX/>
     <WINDOWS/>

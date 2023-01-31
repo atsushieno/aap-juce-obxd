@@ -171,7 +171,7 @@
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1"
                    androidMinimumSDK="29" androidTargetSDK="33"
-                   androidDependencies="runtimeOnly 'dev.atsushieno:libcxx-provider:25.1.8937393'&#10;implementation 'org.androidaudioplugin:androidaudioplugin:0.7.5-pre'&#10;implementation 'org.androidaudioplugin:androidaudioplugin-midi-device-service:0.7.5-pre'&#10;"
+                   androidDependencies="runtimeOnly libs.libcxx.provider&#10;implementation libs.aap.core&#10;implementation libs.aap.midi.device.service"
                    >
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 

@@ -115,7 +115,7 @@
         <MODULEPATH id="juce_audio_devices" path="juce-modules"/>
         <MODULEPATH id="juce_audio_basics" path="juce-modules"/>
         <MODULEPATH id="juce_audio_utils" path="juce-modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </XCODE_MAC>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie -lcurl"
@@ -139,7 +139,7 @@
         <MODULEPATH id="juce_audio_formats" path="juce-modules"/>
         <MODULEPATH id="juce_audio_devices" path="juce-modules"/>
         <MODULEPATH id="juce_audio_basics" path="juce-modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2019 targetFolder="Builds/VisualStudio2019" smallIcon="nnY63W" bigIcon="nnY63W"
@@ -196,7 +196,7 @@
         <MODULEPATH id="juce_audio_devices" path="juce-modules"/>
         <MODULEPATH id="juce_audio_basics" path="juce-modules"/>
         <MODULEPATH id="juce_audio_utils" path="juce-modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./modules" />
+        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
       </MODULEPATHS>
     </ANDROIDSTUDIO>
   </EXPORTFORMATS>

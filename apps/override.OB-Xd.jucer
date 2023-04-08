@@ -115,7 +115,7 @@
         <MODULEPATH id="juce_audio_devices" path="juce-modules"/>
         <MODULEPATH id="juce_audio_basics" path="juce-modules"/>
         <MODULEPATH id="juce_audio_utils" path="juce-modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
+        <MODULEPATH id="aap_audio_processors" path="./aap-modules" />
       </MODULEPATHS>
     </XCODE_MAC>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-no-pie -lcurl"
@@ -139,7 +139,7 @@
         <MODULEPATH id="juce_audio_formats" path="juce-modules"/>
         <MODULEPATH id="juce_audio_devices" path="juce-modules"/>
         <MODULEPATH id="juce_audio_basics" path="juce-modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
+        <MODULEPATH id="aap_audio_processors" path="./aap-modules" />
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2019 targetFolder="Builds/VisualStudio2019" smallIcon="nnY63W" bigIcon="nnY63W"
@@ -171,7 +171,7 @@
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1"
                    androidMinimumSDK="29" androidTargetSDK="33"
-                   androidDependencies="runtimeOnly libs.libcxx.provider&#10;implementation libs.aap.core&#10;implementation libs.aap.midi.device.service"
+                   androidDependencies="runtimeOnly libs.libcxx.provider&#10;implementation libs.aap.core&#10;implementation libs.aap.midi.device.service&#10;implementation libs.aap.ui.web"
                    >
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" 
@@ -196,12 +196,12 @@
         <MODULEPATH id="juce_audio_devices" path="juce-modules"/>
         <MODULEPATH id="juce_audio_basics" path="juce-modules"/>
         <MODULEPATH id="juce_audio_utils" path="juce-modules"/>
-        <MODULEPATH id="juceaap_audio_plugin_client" path="./aap-modules" />
+        <MODULEPATH id="aap_audio_processors" path="./aap-modules" />
       </MODULEPATHS>
     </ANDROIDSTUDIO>
   </EXPORTFORMATS>
   <MODULES>
-    <MODULES id="juceaap_audio_plugin_client" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULES id="aap_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0" />
     <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0" />
     <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0" />

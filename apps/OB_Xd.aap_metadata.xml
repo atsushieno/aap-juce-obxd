@@ -5,7 +5,11 @@
           manufacturer="https://www.github.com/atsushieno/aap-juce-obxd" unique-id="juceaap:4f627864"
           library="libjuce_jni.so" entrypoint="GetJuceAAPFactory" assets="">
     <extensions>
-      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1"/>
+      <extension uri="urn://androidaudioplugin.org/extensions/plugin-info/v2"/>
+      <extension uri="urn://androidaudioplugin.org/extensions/presets/v2"/>
+      <extension uri="urn://androidaudioplugin.org/extensions/state/v2"/>
+      <extension uri="urn://androidaudioplugin.org/extensions/midi2/v2"/>
+      <extension uri="urn://androidaudioplugin.org/extensions/gui/v2"/>
     </extensions>
     <parameters xmlns="urn://androidaudioplugin.org/extensions/parameters">
       <parameter id="0" name="Undefined" direction="input" default="0.0" minimum="0.0"

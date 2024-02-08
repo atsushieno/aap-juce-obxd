@@ -170,7 +170,7 @@
     </VS2019>
     <ANDROIDSTUDIO targetFolder="Builds/Android"
                    extraDefs="JUCEAAP_HAVE_AUDIO_PLAYHEAD_NEW_POSITION_INFO=1"
-                   androidMinimumSDK="29" androidTargetSDK="34"
+                   androidMinimumSDK="29" androidTargetSDK="34" ndkVersion="26.1.10909125"
                    androidDependencies="runtimeOnly libs.libcxx.provider&#10;implementation libs.aap.core&#10;implementation libs.aap.midi.device.service&#10;implementation libs.aap.ui.web&#10;implementation libs.aap.ui.compose&#10;implementation libs.aap.ui.compose.app"
                    >
       <CONFIGURATIONS>
